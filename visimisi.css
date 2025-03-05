@@ -1,0 +1,123 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('gambar/WELCOME\ \(7\).png'); /* Sesuaikan ekstensi file */
+    background-size: cover;  /* Agar gambar menutupi seluruh halaman */
+    background-position: center;  /* Agar gambar selalu di tengah */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    text-align: center;
+}
+
+header {
+    background: #1E3A8A;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+}
+
+/* Logo Home */
+.home-logo {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+}
+
+.home-logo:hover {
+    opacity: 0.8;
+}
+
+/* Anggota Section */
+.anggota {
+    padding: 50px 20px;
+    background: #e5e5e5;
+}
+
+h2 {
+    font-size: 32px;
+    color: #1E3A8A;
+    margin-bottom: 20px;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Kelompok */
+.kelompok {
+    margin: 30px auto;
+    width: 90%;
+    max-width: 600px;
+    background: #1E3A8A;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.kelompok h3 {
+    font-size: 24px;
+    color: yellow;
+    margin-bottom: 15px;
+}
+.kelompok h5 {
+    font-size: 16px;
+    color: orange;
+    margin-bottom: 15px;
+}
+
+/* Slideshow */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 250px; /* Sesuaikan tinggi */
+}
+
+.slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* Foto */
+.slide img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Nama */
+.slide p {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
